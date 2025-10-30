@@ -8,7 +8,9 @@ require('dotenv').config();
 
 const router = express.Router();
 
-// User registration route
+// @route POST /api/auth/register
+// @description user registration & get token
+// @access Public
 router.post('/register', [
     check('name', 'Name is required').not().isEmpty(),
     check('email', 'Please include a valid email').isEmail(),
