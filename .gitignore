@@ -1,0 +1,4 @@
+y-ultimate/backend/node_modules
+ y-ultimate/frontend/node_modules
+.env
+secret.md
